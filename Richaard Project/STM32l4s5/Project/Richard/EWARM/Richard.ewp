@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
-
+<?xml version="1.0" encoding="UTF-8"?>
 <project>
   <fileVersion>2</fileVersion>
   <configuration>
@@ -99,7 +98,7 @@
         </option>
         <option>
           <name>OGChipSelectEditMenu</name>
-          <state></state>
+          <state>STM32L4S5ZI	ST STM32L4S5ZI</state>
         </option>
         <option>
           <name>GenLowLevelInterface</name>
@@ -164,6 +163,8 @@
         <debug>1</debug>
         <option>
           <name>CCDefines</name>
+          <state>USE_HAL_DRIVER</state>
+          <state>STM32L4S5xx</state>
           <state></state>
         </option>
         <option>
@@ -293,7 +294,14 @@
         </option>
         <option>
           <name>CCIncludePath2</name>
-          <state></state>
+          <state>$PROJ_DIR$/../Core/Inc</state>
+          <state>$PROJ_DIR$/../FATFS/Target</state>
+          <state>$PROJ_DIR$/../FATFS/App</state>
+          <state>$PROJ_DIR$/../Drivers/STM32L4xx_HAL_Driver/Inc</state>
+          <state>$PROJ_DIR$/../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy</state>
+          <state>$PROJ_DIR$/../Middlewares/Third_Party/FatFs/src</state>
+          <state>$PROJ_DIR$/../Drivers/CMSIS/Device/ST/STM32L4xx/Include</state>
+          <state>$PROJ_DIR$/../Drivers/CMSIS/Include</state>
         </option>
         <option>
           <name>CCStdIncCheck</name>
@@ -595,7 +603,7 @@
     <settings>
       <name>BICOMP</name>
       <archiveVersion>0</archiveVersion>
-      <data/>
+      <data></data>
     </settings>
     <settings>
       <name>BUILDACTION</name>
@@ -915,7 +923,7 @@
     <settings>
       <name>BILINK</name>
       <archiveVersion>0</archiveVersion>
-      <data/>
+      <data></data>
     </settings>
   </configuration>
   <group>
@@ -931,22 +939,22 @@
       <group>
         <name>Core</name>
         <file>
-          <name>$PROJ_DIR$\..\Core\Src\gpio.c</name>
+          <name>$PROJ_DIR$\..\Core\Src\main.c</name>
         </file>
         <file>
-          <name>$PROJ_DIR$\..\Core\Src\main.c</name>
+          <name>$PROJ_DIR$\..\Core\Src\gpio.c</name>
         </file>
         <file>
           <name>$PROJ_DIR$\..\Core\Src\sdmmc.c</name>
         </file>
         <file>
-          <name>$PROJ_DIR$\..\Core\Src\stm32l4xx_hal_msp.c</name>
+          <name>$PROJ_DIR$\..\Core\Src\usart.c</name>
         </file>
         <file>
           <name>$PROJ_DIR$\..\Core\Src\stm32l4xx_it.c</name>
         </file>
         <file>
-          <name>$PROJ_DIR$\..\Core\Src\usart.c</name>
+          <name>$PROJ_DIR$\..\Core\Src\stm32l4xx_hal_msp.c</name>
         </file>
       </group>
       <group>
@@ -963,10 +971,10 @@
             <name>$PROJ_DIR$\..\FATFS\Target\bsp_driver_sd.c</name>
           </file>
           <file>
-            <name>$PROJ_DIR$\..\FATFS\Target\fatfs_platform.c</name>
+            <name>$PROJ_DIR$\..\FATFS\Target\sd_diskio.c</name>
           </file>
           <file>
-            <name>$PROJ_DIR$\..\FATFS\Target\sd_diskio.c</name>
+            <name>$PROJ_DIR$\..\FATFS\Target\fatfs_platform.c</name>
           </file>
         </group>
       </group>
@@ -986,16 +994,16 @@
         <name>$PROJ_DIR$\..\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal.c</name>
       </file>
       <file>
-        <name>$PROJ_DIR$\..\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_cortex.c</name>
+        <name>$PROJ_DIR$\..\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_i2c.c</name>
       </file>
       <file>
-        <name>$PROJ_DIR$\..\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_dma.c</name>
+        <name>$PROJ_DIR$\..\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_i2c_ex.c</name>
       </file>
       <file>
-        <name>$PROJ_DIR$\..\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_dma_ex.c</name>
+        <name>$PROJ_DIR$\..\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_rcc.c</name>
       </file>
       <file>
-        <name>$PROJ_DIR$\..\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_exti.c</name>
+        <name>$PROJ_DIR$\..\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_rcc_ex.c</name>
       </file>
       <file>
         <name>$PROJ_DIR$\..\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_flash.c</name>
@@ -1010,10 +1018,10 @@
         <name>$PROJ_DIR$\..\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_gpio.c</name>
       </file>
       <file>
-        <name>$PROJ_DIR$\..\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_i2c.c</name>
+        <name>$PROJ_DIR$\..\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_dma.c</name>
       </file>
       <file>
-        <name>$PROJ_DIR$\..\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_i2c_ex.c</name>
+        <name>$PROJ_DIR$\..\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_dma_ex.c</name>
       </file>
       <file>
         <name>$PROJ_DIR$\..\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_pwr.c</name>
@@ -1022,10 +1030,13 @@
         <name>$PROJ_DIR$\..\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_pwr_ex.c</name>
       </file>
       <file>
-        <name>$PROJ_DIR$\..\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_rcc.c</name>
+        <name>$PROJ_DIR$\..\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_cortex.c</name>
       </file>
       <file>
-        <name>$PROJ_DIR$\..\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_rcc_ex.c</name>
+        <name>$PROJ_DIR$\..\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_exti.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_ll_sdmmc.c</name>
       </file>
       <file>
         <name>$PROJ_DIR$\..\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_sd.c</name>
@@ -1044,9 +1055,6 @@
       </file>
       <file>
         <name>$PROJ_DIR$\..\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_uart_ex.c</name>
-      </file>
-      <file>
-        <name>$PROJ_DIR$\..\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_ll_sdmmc.c</name>
       </file>
     </group>
   </group>
@@ -1069,5 +1077,4 @@
     </group>
   </group>
 </project>
-
 
